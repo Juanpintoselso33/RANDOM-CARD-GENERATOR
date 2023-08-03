@@ -1,1 +1,31 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  width: 18rem;
+  height: 400px;
+  position: relative;
+}
+.card-suit {
+  position: absolute;
+  font-size: 60px;
+}
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.card-value {
+  font-size: 70px;
+  color: black !important;
+  font-family: "Libre Baskerville", serif;
+}
+
+#newCardButton {
+  width: 150px;
+  border-radius: 25px;
+}
