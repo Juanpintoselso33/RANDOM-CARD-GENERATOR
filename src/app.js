@@ -5,10 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+window.onload = function() {};
 
 let suits = ["&hearts;", "&spades;", "&clubs;", "&diams;"];
 let values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "K", "Q", "J", "A"];
@@ -27,13 +24,13 @@ document.addEventListener("DOMContentLoaded", event => {
     .getElementById("newCardButton")
     .addEventListener("click", generateCard);
 
-  setInterval(generateCard, 10000); // Generates a new card every 10 seconds
+  setInterval(generateCard, 10000);
 });
 
 function generateCard() {
   const card = getRandomCard();
-  const cardWidth = document.getElementById("cardWidth").value || 270; // Default width
-  const cardHeight = document.getElementById("cardHeight").value || 400; // Default height
+  const cardWidth = document.getElementById("cardWidth").value || 270;
+  const cardHeight = document.getElementById("cardHeight").value || 400;
 
   const cardElement = document.getElementById("card");
   cardElement.style.width = `${cardWidth}px`;
